@@ -1,1 +1,47 @@
-# canada-co2-report
+# AI Environmental Report Bot – 🇨🇦 Canada MVP
+
+An automated **Generative AI-powered environmental summarizer** that analyzes and reports on **Canada’s CO₂ emissions trends** using open data from **Our World in Data (OWID)**.
+
+---
+
+## Overview
+
+This project automatically:
+1. **Fetches** real environmental data (CO₂, GDP, population) from open datasets.  
+2. **Analyzes** long-term trends and detects major **changepoints** in emissions patterns.  
+3. **Visualizes** results in clear charts.  
+4. **Generates natural-language reports** (Markdown or PDF) summarizing environmental shifts — optionally enhanced by an LLM (e.g., OpenAI GPT-4o).
+
+All reports are reproducible, data-driven, and suitable for weekly or monthly publication.
+
+---
+
+## Example Output (2025-10-28)
+
+### 🇨🇦 Canada Weekly Environmental Briefing – 2025-10-28
+**Scope:** CO₂ trends from OWID dataset. Figures auto-generated.
+
+#### Highlights
+- **Latest year:** 2023  
+- **Total CO₂:** 549.3 Mt (**YoY:** −0.24 %)  
+- **CO₂ per capita:** 13.98 t/person (**YoY:** −1.45 %)  
+- **CO₂ intensity (5-year avg):** 323.75 t/MUSD  
+
+#### Notable changes
+- Changepoints detected around **1904** and **1964**.  
+
+#### Summary
+CO₂ totals are **decreasing** in the latest year.  
+Multiple changepoints were detected, reflecting industrialization and later efficiency gains.  
+Per-capita emissions include a 5-year smoothing for stability.
+
+#### Visuals
+| Metric | Chart |
+|:-------|:------|
+| **Total CO₂ (Mt)** | ![CO₂ total](outputs/charts/co2_total.png) |
+| **CO₂ per capita (t/person)** | ![CO₂ per capita](outputs/charts/co2_per_capita.png) |
+| **CO₂ intensity (t/MUSD)** | ![CO₂ intensity](outputs/charts/co2_intensity.png) |
+
+*Data: [Our World in Data – CO₂ dataset](https://github.com/owid/co2-data). Generated 2025-10-28.*
+
+---
