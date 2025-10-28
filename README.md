@@ -47,23 +47,6 @@ All reports are reproducible, data-driven, and suitable for weekly or monthly pu
 
 ---
 
-## Quickstart
-
-# Clone the repo
-git clone https://github.com/<your-username>/ai-environmental-report-bot.git
-cd ai-environmental-report-bot
-
-# Create and activate virtual environment
-python -m venv .venv && source .venv/bin/activate
-
-# Install dependencies
-pip install -e .
-
-# Run full pipeline (fetch → analyze → visualize → summarize)
-envbot all
-
----
-
 ## Data Sources & Attribution
 
 - **Primary dataset:** Our World in Data — *CO₂ and Greenhouse Gas Emissions*  
@@ -116,3 +99,19 @@ envbot all
      - Commit latest `outputs/`.
      - Publish `outputs` to GitHub Pages (static site).
 ---
+
+## Quickstart
+
+```bash
+# Clone the repo
+git clone https://github.com/<your-username>/ai-environmental-report-bot.git
+cd ai-environmental-report-bot
+
+# Create and activate a virtual environment
+python -m venv .venv && source .venv/bin/activate
+
+# Install dependencies
+pip install -e .
+
+# Run the full pipeline (fetch → analyze → visualize → summarize)
+envbot all
