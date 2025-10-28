@@ -45,3 +45,21 @@ Per-capita emissions include a 5-year smoothing for stability.
 *Data: [Our World in Data – CO₂ dataset](https://github.com/owid/co2-data). Generated 2025-10-28.*
 
 ---
+
+---
+
+## Quickstart
+
+```bash
+# Clone the repo
+git clone https://github.com/<your-username>/ai-environmental-report-bot.git
+cd ai-environmental-report-bot
+
+# Create and activate virtual environment
+python -m venv .venv && source .venv/bin/activate
+
+# Install dependencies
+pip install -e .
+
+# Run full pipeline (fetch → analyze → visualize → summarize)
+envbot all
